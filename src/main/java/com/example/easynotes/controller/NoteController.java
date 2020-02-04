@@ -30,6 +30,7 @@ public class NoteController {
     }
 
     // Get a Single Note
+    // a new comment added
     @GetMapping("/notes/{id}")
     public Note getNoteById(@PathVariable(value = "id") Long noteId) {
     	Note n=  noteRepositoryService.findById(noteId);
