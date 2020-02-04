@@ -23,7 +23,7 @@ public class NoteController {
         return noteRepositoryService.findAll();
     }
     
-    // Create a new Note
+    // Create a new Note with request body
     @PostMapping("/notes")
     public Note createNote(@Valid @RequestBody Note note) {
         return noteRepositoryService.save(note);
